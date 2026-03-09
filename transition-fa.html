@@ -1,60 +1,133 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>برنامه گذار</title>
+  <title>فارسی - Freedom Voice Iran</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
-      padding: 40px 24px;
-      font-family: Arial, sans-serif;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
       background: #d9f6f7;
+      font-family: Arial, sans-serif;
       color: #111;
-      text-align: center;
     }
 
-    .box {
-      max-width: 800px;
+    .top-flag {
+      width: 100%;
+      line-height: 0;
+    }
+
+    .top-flag img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
       margin: 0 auto;
-      background: #fff;
-      border: 2px solid #999;
-      border-radius: 18px;
-      padding: 28px;
+      padding: 26px 24px 60px;
     }
 
-    h1 {
-      margin-top: 0;
-      font-size: 28px;
+    .page-mark {
+      text-align: left;
+      font-size: 15px;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 22px;
     }
 
-    p {
-      font-size: 18px;
-      line-height: 1.9;
+    .buttons-wrap {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
     }
 
-    .open-btn,
+    .menu-button {
+      display: block;
+      width: 100%;
+      padding: 13px 16px;
+      border-radius: 16px;
+      border: 2px solid #888;
+      background: linear-gradient(to right, #19b543 0%, #ffffff 50%, #ef1c1c 100%);
+      color: #111;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: right;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
     .back-btn {
       display: inline-block;
-      margin: 12px 8px 0;
-      padding: 12px 22px;
-      border-radius: 12px;
-      border: 2px solid #888;
+      margin-top: 26px;
+      padding: 11px 22px;
+      border-radius: 14px;
       background: #fff;
+      border: 2px solid #888;
       color: #000;
       text-decoration: none;
       font-weight: 700;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 16px 50px;
+      }
+
+      .page-mark {
+        font-size: 14px;
+      }
+
+      .buttons-wrap {
+        max-width: 300px;
+      }
+
+      .menu-button {
+        font-size: 15px;
+        padding: 12px 14px;
+      }
+
+      .back-btn {
+        font-size: 15px;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>برنامه گذار شاهزاده رضا پهلوی</h1>
-    <p>برای دیدن صفحه، روی دکمه زیر بزنید.</p>
 
-    <a class="open-btn" href="https://rezapahlavi.org/fa/about" target="_blank">باز کردن لینک</a>
-    <a class="back-btn" href="farsi.html">بازگشت</a>
+  <div class="top-flag">
+    <img src="c8811ebc-cd46-4b76-ac28-5fd641b23e2e.jpeg" alt="پرچم" />
   </div>
+
+  <div class="container">
+    <div class="page-mark">فارسی</div>
+
+    <div class="buttons-wrap">
+      <a class="menu-button" href="history-fa.html">۱. تاریخ</a>
+
+      <a class="menu-button" href="https://share.google/esNYJoPMyS3M93TBl" target="_blank">۲. جزیره کیش</a>
+
+      <a class="menu-button" href="transition-fa.html">۳. برنامه گذار شاهزاده رضا پهلوی</a>
+
+      <a class="menu-button" href="urgent-fa.html">۴. اقدامات فوری</a>
+    </div>
+
+    <a class="back-btn" href="index.html">بازگشت</a>
+  </div>
+
 </body>
 </html>
