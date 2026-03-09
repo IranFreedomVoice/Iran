@@ -16,7 +16,6 @@
       min-height: 100%;
       background: #d9f6f7;
       font-family: Arial, sans-serif;
-      text-align: center;
       color: #111;
     }
 
@@ -40,75 +39,109 @@
       width: 100%;
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 18px 60px;
+      padding: 28px 18px 60px;
+    }
+
+    .page-mark {
+      text-align: right;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 10px;
     }
 
     h1 {
-      margin: 10px 0 18px;
-      font-size: 3rem;
+      margin: 6px 0 10px;
+      font-size: 2.2rem;
       color: #000;
+      text-align: center;
     }
 
     .subtitle {
-      font-size: 1.15rem;
+      font-size: 0.95rem;
       color: #333;
-      margin-bottom: 34px;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    .buttons-wrap {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     .contact-button {
       display: block;
-      width: 88%;
-      max-width: 680px;
-      margin: 24px auto;
-      padding: 22px 20px;
-      border-radius: 22px;
+      width: 72%;
+      max-width: 520px;
+      margin: 16px 0;
+      padding: 16px 18px;
+      border-radius: 18px;
       border: 2px solid #888;
       background: linear-gradient(to right, #0b6b3a 0%, #ffffff 50%, #ef1c1c 100%);
       color: #111;
-      font-size: 2rem;
+      font-size: 1.1rem;
       font-weight: 700;
       text-decoration: none;
+      text-align: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
 
     .back-btn {
       display: inline-block;
-      margin-top: 26px;
-      padding: 14px 28px;
-      border-radius: 16px;
+      margin-top: 28px;
+      padding: 12px 24px;
+      border-radius: 14px;
       background: #fff;
       border: 2px solid #888;
       color: #000;
       text-decoration: none;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     @media (max-width: 768px) {
       h1 {
-        font-size: 2.4rem;
+        font-size: 2rem;
       }
 
       .contact-button {
-        font-size: 1.7rem;
-        padding: 20px 16px;
+        width: 78%;
+        font-size: 1rem;
+        padding: 15px 16px;
       }
     }
 
     @media (max-width: 480px) {
+      .container {
+        padding: 24px 16px 50px;
+      }
+
+      .page-mark {
+        font-size: 0.9rem;
+      }
+
       h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
 
       .subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 22px;
       }
 
       .contact-button {
-        width: 92%;
-        font-size: 1.4rem;
-        padding: 18px 12px;
-        border-radius: 18px;
+        width: 78%;
+        max-width: none;
+        font-size: 0.95rem;
+        padding: 14px 14px;
+        border-radius: 16px;
+      }
+
+      .back-btn {
+        font-size: 0.9rem;
+        padding: 11px 20px;
       }
     }
   </style>
@@ -120,18 +153,22 @@
   </div>
 
   <div class="container">
+    <div class="page-mark">Shir-o-khorshid Revolution</div>
+
     <h1>Contact</h1>
-    <p class="subtitle">Shir-o-khorshid Revolution</p>
+    <p class="subtitle">Contact page</p>
 
-    <a class="contact-button" href="mailto:freedom.voice.for.iran@gmail.com?subject=Contact">E-mail</a>
+    <div class="buttons-wrap">
+      <a class="contact-button" href="mailto:freedom.voice.for.iran@gmail.com?subject=Contact">E-mail</a>
 
-    <a class="contact-button" href="https://www.instagram.com/shirokhorshid_revolution?igsh=aW5kbm0za2cwYzNj" target="_blank">
-      Instagram
-    </a>
+      <a class="contact-button" href="https://www.instagram.com/shirokhorshid_revolution?igsh=aW5kbm0za2cwYzNj" target="_blank">
+        Instagram
+      </a>
 
-    <a class="contact-button" href="#" target="_blank">
-      X
-    </a>
+      <a class="contact-button" href="https://x.com/shirokhorshidrev" target="_blank">
+        X
+      </a>
+    </div>
 
     <a class="back-btn" href="index.html">Back</a>
   </div>
