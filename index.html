@@ -9,9 +9,11 @@
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      width: 100%;
+      overflow-x: hidden;
       background: #d9f6f7;
       color: #111;
       font-family: Arial, sans-serif;
@@ -21,26 +23,27 @@
     .top-red-bar {
       width: 100%;
       height: 26px;
-      background: #b30000;
+      background: #c40000;
     }
 
     .top-flag {
-      padding: 10px 0 0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
 
     .top-flag img {
-      width: 90px;
-      max-width: 30%;
+      width: 100%;
       height: auto;
       display: block;
-      margin: 0 auto;
+      margin: 0;
     }
 
     .container {
       width: 100%;
       max-width: 900px;
       margin: 0 auto;
-      padding: 10px 18px 50px;
+      padding: 18px 18px 50px;
     }
 
     .image-card {
@@ -60,7 +63,7 @@
     }
 
     .main-title {
-      margin: 20px 0 10px;
+      margin: 20px 0 12px;
       font-size: 4rem;
       font-weight: 900;
       text-transform: uppercase;
@@ -69,15 +72,9 @@
     }
 
     .desc {
-      margin: 0;
+      margin: 0 0 28px;
       font-size: 1.2rem;
       color: #333;
-    }
-
-    .year {
-      margin: 18px 0 28px;
-      font-size: 1.15rem;
-      color: #444;
     }
 
     .lang-btn {
@@ -104,40 +101,23 @@
 
     footer {
       margin-top: 60px;
-      padding: 40px 20px 60px;
+      padding: 36px 20px 50px;
       border-top: 2px solid #555;
     }
 
     .footer-title {
       font-size: 1.25rem;
       color: #000;
-      margin-bottom: 26px;
+      margin-bottom: 24px;
       font-weight: 700;
-    }
-
-    .contact-text {
-      font-size: 1rem;
-      color: #000;
-      margin: 14px 0;
-    }
-
-    .email-link {
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .email-link:hover {
-      text-decoration: underline;
     }
 
     .contact-link {
       display: inline-block;
-      margin-top: 18px;
       color: #000;
       text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
+      font-weight: 700;
+      font-size: 1.1rem;
     }
 
     .contact-link:hover {
@@ -157,11 +137,10 @@
 
     @media (max-width: 480px) {
       .main-title {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
       }
 
-      .desc,
-      .year {
+      .desc {
         font-size: 1rem;
       }
 
@@ -170,10 +149,6 @@
         font-size: 1.45rem;
         padding: 18px 12px;
         border-radius: 18px;
-      }
-
-      .top-flag img {
-        width: 72px;
       }
     }
   </style>
@@ -194,27 +169,14 @@
 
     <h1 class="main-title">IRAN</h1>
     <p class="desc">Iranian Shir-o-khorshid Revolution 2026</p>
-    <p class="year">Iran 2026</p>
 
     <a class="lang-btn" href="english.html">English</a>
     <a class="lang-btn" href="deutsch.html">Deutsch</a>
     <a class="lang-btn" href="farsi.html">فارسی</a>
 
     <footer>
-      <div class="footer-title">Long live Iran</div>
-
-      <p class="contact-text">
-        Contact:
-        <a class="email-link" href="mailto:freedom.voice.for.iran@gmail.com?subject=Contact%20from%20Freedom%20Voice%20Iran">
-          freedom.voice.for.iran@gmail.com
-        </a>
-      </p>
-
-      <p>
-        <a class="contact-link" href="mailto:freedom.voice.for.iran@gmail.com?subject=Contact%20from%20Freedom%20Voice%20Iran">
-          Contact 
-        </a>
-      </p>
+      <div class="footer-title">Shir-o-khorshid Revolution</div>
+      <a class="contact-link" href="mailto:freedom.voice.for.iran@gmail.com?subject=Contact%20from%20Freedom%20Voice%20Iran">Contact</a>
     </footer>
 
   </div>
