@@ -20,17 +20,11 @@
       text-align: center;
     }
 
-    .top-red-bar {
-      display: none;
-      width: 100%;
-      height: 26px;
-      background: #c40000;
-    }
-
     .top-flag {
       width: 100%;
       margin: 0;
       padding: 0;
+      line-height: 0;
     }
 
     .top-flag img {
@@ -38,6 +32,8 @@
       height: auto;
       display: block;
       margin: 0;
+      padding: 0;
+      border: 0;
     }
 
     .container {
@@ -86,18 +82,26 @@
       padding: 22px 20px;
       border-radius: 22px;
       border: 2px solid #888;
-      background: linear-gradient(to right, #169b1a 0%, #ffffff 50%, #ef1c1c 100%);
+      background: linear-gradient(to right, #0b6b3a 0%, #ffffff 50%, #ef1c1c 100%);
       color: #111;
       font-size: 2rem;
       font-weight: 700;
       text-decoration: none;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .lang-btn:hover {
-      transform: scale(1.02);
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    .contact-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 18px 34px;
+      border-radius: 18px;
+      border: 2px solid #777;
+      background: #ffffff;
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
     }
 
     footer {
@@ -111,18 +115,6 @@
       color: #000;
       margin-bottom: 24px;
       font-weight: 700;
-    }
-
-    .contact-link {
-      display: inline-block;
-      color: #000;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.1rem;
-    }
-
-    .contact-link:hover {
-      text-decoration: underline;
     }
 
     @media (max-width: 768px) {
@@ -151,12 +143,15 @@
         padding: 18px 12px;
         border-radius: 18px;
       }
+
+      .contact-btn {
+        font-size: 1.05rem;
+        padding: 16px 28px;
+      }
     }
   </style>
 </head>
 <body>
-
-  <div class="top-red-bar"></div>
 
   <div class="top-flag">
     <img src="c8811ebc-cd46-4b76-ac28-5fd641b23e2e.jpeg" alt="Flag" />
@@ -165,7 +160,7 @@
   <div class="container">
 
     <div class="image-card">
-      <img src="IMG_4383.jpeg" alt="Long Live Iran" class="main-image" />
+      <img src="IMG_4383.jpeg" alt="Shir-o-khorshid Revolution" class="main-image" />
     </div>
 
     <h1 class="main-title">IRAN</h1>
@@ -176,8 +171,8 @@
     <a class="lang-btn" href="farsi.html">فارسی</a>
 
     <footer>
-      <div class="footer-title">Long Live Iran</div>
-      <a class="contact-link" href="mailto:freedom.voice.for.iran@gmail.com?subject=Contact%20from%20Freedom%20Voice%20Iran">Contact</a>
+      <div class="footer-title">Shir-o-khorshid Revolution</div>
+      <a class="contact-btn" href="contact.html">Contact</a>
     </footer>
 
   </div>
