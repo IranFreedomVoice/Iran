@@ -3,154 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>برنامه گذار</title>
-
+  <title>برنامه گذار شاهزاده رضا پهلوی</title>
   <style>
-    body {
+    * { box-sizing: border-box; }
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background: #d9f6f7;
       font-family: Tahoma, Arial, sans-serif;
-      background: linear-gradient(to bottom, #f8f4ee, #e9dfd1);
-      color: #222;
+      color: #111;
+    }
+    .wrapper {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+    }
+    .card {
+      background: #fffaf5;
+      border: 2px solid #888;
+      border-radius: 22px;
+      padding: 36px 24px;
       text-align: center;
     }
-
-    .top-flag {
-      width: 100%;
-      max-height: 180px;
-      overflow: hidden;
-    }
-
-    .top-flag img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 30px 20px 50px;
-    }
-
-    .page-mark {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
     h1 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #7a1f1f;
+      margin: 0 0 18px;
+      font-size: 34px;
+      font-weight: 700;
+      color: #333;
     }
-
-    p.description {
-      font-size: 1.1rem;
-      line-height: 2;
-      max-width: 700px;
-      margin: 0 auto 30px;
+    p {
+      margin: 0 0 28px;
+      font-size: 18px;
+      line-height: 1.9;
+      color: #333;
     }
-
-    .buttons-wrap {
+    .btn-row {
       display: flex;
-      flex-direction: column;
-      gap: 14px;
-      align-items: center;
-      margin-top: 25px;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
     }
-
-    .menu-button {
+    .action-btn {
       display: inline-block;
-      width: 90%;
-      max-width: 420px;
-      padding: 12px 18px;
-      background-color: #8b1e1e;
-      color: white;
+      padding: 12px 24px;
+      border-radius: 14px;
+      background: #fff;
+      border: 2px solid #888;
+      color: #000;
       text-decoration: none;
-      font-size: 1rem;
-      border-radius: 10px;
-      transition: 0.2s ease;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+      font-weight: 700;
+      font-size: 18px;
     }
-
-    .menu-button:hover {
-      background-color: #a32626;
-      transform: translateY(-2px);
-    }
-
-    .back-btn {
-      display: inline-block;
-      margin-top: 35px;
-      padding: 10px 22px;
-      background-color: #444;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 0.95rem;
-    }
-
-    .back-btn:hover {
-      background-color: #222;
-    }
-
-    footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #555;
-      padding-bottom: 20px;
-    }
-
     @media (max-width: 600px) {
+      .wrapper {
+        padding: 22px 14px 40px;
+      }
+      .card {
+        padding: 28px 18px;
+      }
       h1 {
-        font-size: 1.6rem;
+        font-size: 26px;
       }
-
-      p.description {
-        font-size: 1rem;
+      p {
+        font-size: 16px;
       }
-
-      .menu-button {
-        font-size: 0.95rem;
-        padding: 11px 14px;
+      .action-btn {
+        font-size: 16px;
+        padding: 10px 18px;
       }
     }
   </style>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="card">
+      <h1>برنامه گذار شاهزاده رضا پهلوی</h1>
+      <p>برای ورود به صفحه فارسی، روی دکمه زیر بزنید.</p>
 
-  <div class="top-flag">
-    <img src="8312b1ec-c0d6-4b76-a62d-5f6a413b23e7.jpg" alt="پرچم شیر و خورشید" />
-  </div>
-
-  <div class="container">
-    <div class="page-mark">🕊️</div>
-    <h1>برنامه گذار</h1>
-
-    <p class="description">
-      در این بخش می‌توانید به مطالب مربوط به برنامه گذار، دیدگاه‌ها، پیام‌ها و مطالب مرتبط دسترسی داشته باشید.
-    </p>
-
-    <div class="buttons-wrap">
-      <a class="menu-button" href="history-fa.html">تاریخ</a>
-
-      <a class="menu-button" href="https://www.rezapahlavi.org/fa" target="_blank" rel="noopener noreferrer">
-        برنامه گذار و دیدگاه‌های رضا پهلوی
-      </a>
-
-      <a class="menu-button" href="https://www.rezapahlavi.org/fa/statements" target="_blank" rel="noopener noreferrer">
-        بیانیه‌ها و پیام‌ها
-      </a>
-
-      <a class="menu-button" href="urgent-fa.html">اتفاقات کنونی</a>
-
-      <a class="menu-button" href="martyrs-fa.html">جاویدنامان</a>
+      <div class="btn-row">
+        <a class="action-btn" href="https://www.rezapahlavi.org/fa" target="_blank" rel="noopener noreferrer">باز کردن سایت</a>
+        <a class="action-btn" href="farsi.html">بازگشت</a>
+      </div>
     </div>
-
-    <a class="back-btn" href="index.html">بازگشت</a>
   </div>
-
-  <footer>
-    Iran Freedom Voice
-  </footer>
-
 </body>
 </html>
