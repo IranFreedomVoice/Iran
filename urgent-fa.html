@@ -5,35 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>اقدامات فوری</title>
   <style>
-    body {
+    * { box-sizing: border-box; }
+
+    html, body {
       margin: 0;
       padding: 0;
+      width: 100%;
+      min-height: 100%;
       background: #d9f6f7;
       font-family: Tahoma, Arial, sans-serif;
+      color: #111;
     }
+
     .wrapper {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
     }
+
     .card {
       background: #f8f8f8;
       border: 2px solid #999;
       border-radius: 24px;
-      padding: 30px 20px;
+      padding: 34px 24px;
       text-align: center;
     }
+
     h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+      font-size: 2.2rem;
+      margin: 0 0 22px;
     }
+
     p {
       font-size: 1.2rem;
-      margin-bottom: 24px;
+      margin: 0 0 28px;
+      line-height: 1.9;
     }
+
+    .btn-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
     .btn {
       display: inline-block;
-      margin: 8px;
       padding: 12px 22px;
       border: 2px solid #888;
       border-radius: 16px;
@@ -41,6 +59,30 @@
       color: black;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .wrapper {
+        padding: 24px 14px 40px;
+      }
+
+      .card {
+        padding: 26px 16px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.05rem;
+      }
+
+      .btn {
+        font-size: 0.95rem;
+        padding: 10px 18px;
+      }
     }
   </style>
 </head>
@@ -50,8 +92,10 @@
       <h1>اقدامات فوری</h1>
       <p>برای دیدن پست، روی دکمه زیر بزنید.</p>
 
-      <a class="btn" href="https://x.com/gghamari/status/2031686207348892008?s=46&t=yzj87z8rgoqH2MGhanSBPg" target="_blank" rel="noopener noreferrer">X شبکه ی </a>
-      <a class="btn" href="farsi.html">بازگشت</a>
+      <div class="btn-row">
+        <a class="btn" href="https://x.com/gghamari/status/2031686207348892008?s=46&t=yzj87z8rgoqH2MGhanSBPg" target="_blank" rel="noopener noreferrer">شبکه‌ی X</a>
+        <a class="btn" href="farsi.html">بازگشت</a>
+      </div>
     </div>
   </div>
 </body>
