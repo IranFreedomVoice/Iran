@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>برنامه گذار شاهزاده رضا پهلوی</title>
+  <title>فارسی - Freedom Voice Iran</title>
   <style>
     * { box-sizing: border-box; }
 
@@ -17,89 +17,103 @@
       color: #111;
     }
 
-    .wrapper {
+    .top-flag {
+      width: 100%;
+      line-height: 0;
+    }
+
+    .top-flag img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
       width: 100%;
       max-width: 1100px;
       margin: 0 auto;
-      padding: 40px 20px 60px;
+      padding: 24px 20px 60px;
     }
 
-    .card {
-      background: #fffaf5;
-      border: 2px solid #888;
-      border-radius: 22px;
-      padding: 36px 24px;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0 0 18px;
-      font-size: 34px;
+    .page-mark {
+      text-align: right;
+      font-size: 15px;
       font-weight: 700;
-      color: #333;
+      color: #222;
+      margin-bottom: 22px;
     }
 
-    p {
-      margin: 0 0 28px;
-      font-size: 18px;
-      line-height: 1.9;
-      color: #333;
-    }
-
-    .btn-row {
+    .buttons-wrap {
+      width: 100%;
+      max-width: 580px;
       display: flex;
-      justify-content: center;
-      gap: 18px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      margin-right: auto;
+      margin-left: 0;
     }
 
-    .action-btn {
+    .menu-button {
+      display: block;
+      width: 100%;
+      padding: 13px 18px;
+      border-radius: 28px;
+      border: 2px solid #888;
+      background: linear-gradient(to left, #19b543 0%, #ffffff 50%, #ef1c1c 100%);
+      color: #111;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: right;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .back-btn {
       display: inline-block;
-      padding: 12px 24px;
+      margin-top: 26px;
+      padding: 11px 22px;
       border-radius: 14px;
       background: #fff;
       border: 2px solid #888;
       color: #000;
       text-decoration: none;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 16px;
     }
 
     @media (max-width: 600px) {
-      .wrapper {
-        padding: 24px 14px 40px;
+      .container {
+        padding: 20px 16px 50px;
       }
 
-      .card {
-        padding: 28px 18px;
+      .buttons-wrap {
+        max-width: 100%;
       }
 
-      h1 {
-        font-size: 26px;
-      }
-
-      p {
+      .menu-button {
         font-size: 16px;
-      }
-
-      .action-btn {
-        font-size: 16px;
-        padding: 10px 18px;
+        padding: 12px 14px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="card">
-      <h1>برنامه گذار شاهزاده رضا پهلوی</h1>
-      <p>برای ورود به صفحه فارسی، روی دکمه زیر بزنید.</p>
+  <div class="top-flag">
+    <img src="c8811ebc-cd46-4b76-ac28-5fd641b23e2e.jpeg" alt="پرچم" />
+  </div>
 
-      <div class="btn-row">
-        <a class="action-btn" href="https://www.rezapahlavi.org/fa" target="_blank" rel="noopener noreferrer">باز کردن سایت</a>
-        <a class="action-btn" href="farsi.html">بازگشت</a>
-      </div>
+  <div class="container">
+    <div class="page-mark">فارسی</div>
+
+    <div class="buttons-wrap">
+      <a class="menu-button" href="https://tarikhiran2.wordpress.com/" target="_blank">۱. تاریخ</a>
+      <a class="menu-button" href="https://eternalnamesiran.wordpress.com/" target="_blank" rel="noopener noreferrer">۲. جاویدنامان</a>
+      <a class="menu-button" href="https://www.rezapahlavi.org/fa" target="_blank" rel="noopener noreferrer">۳. برنامه گذار شاهزاده رضا پهلوی</a>
+      <a class="menu-button" href="urgent-fa.html">۴. اقدامات فوری</a>
     </div>
+
+    <a class="back-btn" href="index.html">Back</a>
   </div>
 </body>
 </html>
