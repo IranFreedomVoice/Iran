@@ -4,99 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>اقدامات فوری</title>
+
   <style>
-    * { box-sizing: border-box; }
-
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      width: 100%;
-      min-height: 100%;
-      background: #d9f6f7;
       font-family: Tahoma, Arial, sans-serif;
-      color: #111;
-    }
-
-    .wrapper {
-      width: 100%;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 30px 20px 60px;
-    }
-
-    .card {
-      background: #f8f8f8;
-      border: 2px solid #999;
-      border-radius: 24px;
-      padding: 34px 24px;
+      background: #d8eef0;
       text-align: center;
     }
 
+    .card {
+      width: 85%;
+      max-width: 700px;
+      margin: 40px auto;
+      background: #f4f4f4;
+      border: 4px solid #999;
+      border-radius: 35px;
+      padding: 40px 20px;
+    }
+
     h1 {
-      font-size: 2.2rem;
-      margin: 0 0 22px;
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: black;
     }
 
     p {
-      font-size: 1.2rem;
-      margin: 0 0 28px;
-      line-height: 1.9;
-    }
-
-    .btn-row {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 22px;
-      border: 2px solid #888;
-      border-radius: 16px;
-      background: white;
+      font-size: 18px;
+      margin-bottom: 35px;
       color: black;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
     }
 
-    @media (max-width: 600px) {
-      .wrapper {
-        padding: 24px 14px 40px;
-      }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+    }
 
-      .card {
-        padding: 26px 16px;
-      }
+    .button {
+      display: inline-block;
+      min-width: 140px;
+      padding: 14px 24px;
+      background: white;
+      border: 3px solid #999;
+      border-radius: 22px;
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
 
-      h1 {
-        font-size: 1.8rem;
-      }
-
-      p {
-        font-size: 1.05rem;
-      }
-
-      .btn {
-        font-size: 0.95rem;
-        padding: 10px 18px;
-      }
+    .button:hover {
+      background: #ececec;
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="card">
-      <h1>اقدامات فوری</h1>
-      <p>برای دیدن پست، روی دکمه زیر بزنید.</p>
 
-      <div class="btn-row">
-        <a class="btn" href="https://x.com/gghamari/status/2031686207348892008?s=46&t=yzj87z8rgoqH2MGhanSBPg" target="_blank" rel="noopener noreferrer">شبکه‌ی X</a>
-        <a class="btn" href="farsi.html">بازگشت</a>
-      </div>
+  <div class="card">
+    <h1>اقدامات فوری</h1>
+    <p>برای دیدن پست، روی دکمه زیر بزنید.</p>
+
+    <div class="buttons">
+      <a href="Farsi.html" class="button">برگشت</a>
+      <a href="#" class="button">حمایت</a>
+      <a href="#" class="button">ریپورت</a>
+      <a href="#" class="button">پتیشن</a>
     </div>
   </div>
+
 </body>
 </html>
