@@ -31,41 +31,71 @@
 
     .page {
       width: 100%;
-      max-width: 760px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 20px 14px 40px;
+      padding: 26px 0 34px;
     }
 
     .title {
       text-align: center;
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 700;
-      margin: 18px 0 20px;
+      margin: 0 0 14px;
     }
 
-    .section {
+    .swipe-note {
+      text-align: center;
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 14px;
+    }
+
+    .slider {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 14px 10px;
+    }
+
+    .slider::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .slider::-webkit-scrollbar-thumb {
+      background: #b7c9cc;
+      border-radius: 20px;
+    }
+
+    .card {
+      flex: 0 0 88%;
+      scroll-snap-align: center;
       background: #eef9fa;
       border: 2px solid #c8dadd;
-      border-radius: 20px;
-      padding: 18px 14px;
-      margin-bottom: 22px;
+      border-radius: 22px;
+      padding: 20px 16px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
       text-align: center;
+      min-height: 520px;
     }
 
-    .section h2 {
-      font-size: 22px;
+    .card-title {
+      font-size: 24px;
+      font-weight: 700;
       margin: 0 0 16px;
     }
 
-    .section h3 {
-      font-size: 18px;
-      margin: 18px 0 10px;
+    .card-subtitle {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 14px;
     }
 
-    .section p {
-      font-size: 16px;
+    .card p {
+      font-size: 17px;
       line-height: 2;
-      margin: 8px 0 12px;
+      margin: 10px 0 14px;
     }
 
     .box {
@@ -73,9 +103,9 @@
       border: 2px solid #d5e3e5;
       border-radius: 16px;
       padding: 14px 12px;
-      margin: 10px 0 14px;
-      font-size: 15px;
-      line-height: 2;
+      margin: 12px 0 14px;
+      font-size: 16px;
+      line-height: 1.9;
       word-break: break-word;
     }
 
@@ -86,7 +116,7 @@
     }
 
     .back-wrap {
-      margin-top: 10px;
+      padding: 8px 14px 0;
       text-align: left;
     }
 
@@ -100,6 +130,14 @@
       text-decoration: none;
       font-size: 13px;
       font-weight: 700;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.10);
+    }
+
+    @media (min-width: 900px) {
+      .card {
+        flex: 0 0 46%;
+        min-height: 500px;
+      }
     }
   </style>
 </head>
@@ -109,59 +147,34 @@
   </div>
 
   <div class="page">
-    <div class="title">حمایت</div>
+    <h1 class="title">حمایت</h1>
+    <div class="swipe-note">ورق بزنید</div>
 
-    <div class="section">
-      <h2>۱. شبکه‌ی X</h2>
+    <div class="slider">
 
-      <h3>۱. ایلان ماسک را تگ کنید</h3>
-      <p>
-        با هر جمله‌ای که دوست دارید، ایلان ماسک را تگ کنید.
-        این پست برای درخواست اینترنت رایگان برای ایران است.
-      </p>
-      <div class="box">
-        <a href="https://x.com/rezavaisi/status/2032585882512089282?s=46&t=yzj87z8rgoqH2MGhanSBPg">
-          مشاهده پست در شبکه‌ی X
-        </a>
-      </div>
+      <section class="card">
+        <h2 class="card-title">شبکه‌ی X</h2>
+        <h3 class="card-subtitle">۱. ایلان ماسک را تگ کنید</h3>
+        <p>
+          با هر جمله‌ای که دوست دارید، ایلان ماسک را تگ کنید.
+          این پست برای درخواست اینترنت رایگان برای ایران است.
+        </p>
+        <div class="box">
+          <a href="https://x.com/rezavaisi/status/2032585882512089282?s=46&t=yzj87z8rgoqH2MGhanSBPg">
+            مشاهده پست در شبکه‌ی X
+          </a>
+        </div>
+        <p>تگ کردن ایلان ماسک برای اینترنت</p>
+      </section>
 
-      <h3>۲. برای پست‌های مارک لوین این متن را بگذارید</h3>
-      <p>
-        این آقا مشاور دونالد ترامپ هستند و خیلی ترامپ به حرف‌های ایشان توجه می‌کند.
-        ایشان به نظرات در شبکه‌های اجتماعی هم اهمیت می‌دهد.
-        شما می‌توانید با هر ادبیاتی که خواستید چیزی زیر پست‌های ایشان بنویسید.
-        این متن فقط یک پیشنهاد است.
-      </p>
-      <div class="box">
-        please pay attention to Ali Javanmardi at VOA. While Iranians have no internet and rely on VOA, he is telling people inside Iran to ignore calls from abroad. His message contradicts President Trump. Please remove him from VOA.
-      </div>
-      <div class="box">
-        <a href="https://x.com/marklevinshow?s=21&t=yzj87z8rgoqH2MGhanSBPg">
-          صفحه مارک لوین در شبکه‌ی X
-        </a>
-      </div>
-
-      <h3>۳. پست حمایتی</h3>
-      <p>
-        پست حمایتی برای اعتراض به حرف‌هایی که علی جوانمردی زده.
-        حمایت کنید تا دیده شود.
-      </p>
-      <div class="box">
-        <a href="https://x.com/mahsanoor_/status/2032510096438342107?s=46&t=yzj87z8rgoqH2MGhanSBPg">
-          مشاهده پست حمایتی
-        </a>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>۲. اینستاگرام</h2>
-      <p>
-        در این پست درباره حرف‌های جوانمردی صحبت شده که برخلاف نظر ترامپ گفته
-        اگر شاهزاده فراخوان داد، در خانه بمانید.
-      </p>
-      <p>
-        اگر خواستید، زیر این پست ترامپ و خبرگزاری‌های CNN و Fox News را تگ کنید
-        و هر متنی که دوست دارید بنویسید.
-      </p>
-      <div class="box">
-        <a href="https://www.instagram.com/reel/DVyixr7CMLT/?igsh=bmNiOHNsYTRzdm05">
+      <section class="card">
+        <h2 class="card-title">شبکه‌ی X</h2>
+        <h3 class="card-subtitle">۲. برای پست‌های مارک لوین این متن را بگذارید</h3>
+        <p>
+          این آقا مشاور دونالد ترامپ هستند و خیلی ترامپ به حرف‌های ایشان توجه می‌کند.
+          ایشان به نظرات در شبکه‌های اجتماعی هم اهمیت می‌دهد.
+          شما می‌توانید با هر ادبیاتی که خواستید چیزی زیر پست‌های ایشان بنویسید.
+          این متن فقط یک پیشنهاد است.
+        </p>
+        <div class="box">
+          please pay attention to Ali Javanmardi at VOA.
