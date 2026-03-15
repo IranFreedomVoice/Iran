@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>فارسی - Freedom Voice Iran</title>
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     html, body {
       margin: 0;
@@ -20,122 +22,12 @@
     .top-flag {
       width: 100%;
       line-height: 0;
-      position: relative;
     }
 
     .top-flag img {
       width: 100%;
       height: auto;
       display: block;
-    }
-
-    .top-bar-inside-flag {
-      position: absolute;
-      top: 12px;
-      left: 16px;
-      right: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .site-title {
-      display: inline-block;
-      padding: 8px 14px;
-      background: rgba(0,0,0,0.35);
-      color: #fff;
-      border-radius: 14px;
-      font-size: 24px;
-      font-weight: 800;
-      line-height: 1.2;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.25);
-    }
-
-    .lang-wrap {
-      position: relative;
-      direction: ltr;
-    }
-
-    .lang-btn {
-      border: 1px solid rgba(255,255,255,0.8);
-      background: rgba(255,255,255,0.95);
-      border-radius: 10px;
-      padding: 8px 14px;
-      font-size: 14px;
-      font-weight: 700;
-      cursor: pointer;
-      color: #111;
-    }
-
-    .lang-menu {
-      display: none;
-      position: absolute;
-      top: 46px;
-      left: 0;
-      width: 150px;
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-      overflow: hidden;
-      z-index: 20;
-    }
-
-    .lang-menu.open {
-      display: block;
-    }
-
-    .lang-menu a {
-      display: block;
-      padding: 10px 12px;
-      text-decoration: none;
-      color: #111;
-      font-size: 14px;
-      border-bottom: 1px solid #eee;
-      text-align: left;
-    }
-
-    .lang-menu a:last-child {
-      border-bottom: none;
-    }
-
-    .nav-strip {
-      width: 100%;
-      background: #f7f7f7;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .nav-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      overflow-x: auto;
-      white-space: nowrap;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-    }
-
-    .nav-inner::-webkit-scrollbar {
-      display: none;
-    }
-
-    .nav-inner a {
-      text-decoration: none;
-      color: #222;
-      font-size: 18px;
-      font-weight: 700;
-      flex: 0 0 auto;
-    }
-
-    .nav-inner a.highlight {
-      background: #f3a9a9;
-      color: #4b1d1d;
-      padding: 8px 16px;
-      border-radius: 999px;
     }
 
     .container {
@@ -145,68 +37,85 @@
       padding: 24px 20px 60px;
     }
 
-    .hero-box {
-      background: #fff;
-      border: 2px solid #999;
-      border-radius: 22px;
-      padding: 14px;
-      margin-bottom: 28px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-    }
-
-    .hero-box img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 18px;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 34px;
-      font-weight: 800;
-      margin: 8px 0 24px;
-    }
-
-    .video-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .video-card {
-      background: #fff;
-      border: 2px solid #999;
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-    }
-
-    .video-card video {
-      width: 100%;
-      display: block;
-      background: #000;
-    }
-
-    .video-text {
-      padding: 14px;
-      font-size: 19px;
+    .page-mark {
+      text-align: right;
+      font-size: 15px;
       font-weight: 700;
-      text-align: center;
-      line-height: 1.7;
+      color: #222;
+      margin-bottom: 22px;
     }
 
-    @media (max-width: 900px) {
-      .site-title {
-        font-size: 20px;
+    .buttons-wrap {
+      width: 100%;
+      max-width: 580px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      margin-right: auto;
+      margin-left: 0;
+    }
+
+    .menu-button {
+      display: block;
+      width: 100%;
+      padding: 13px 18px;
+      border-radius: 28px;
+      border: 2px solid #888;
+      background: linear-gradient(to left, #19b543 0%, #ffffff 50%, #ef1c1c 100%);
+      color: #111;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: right;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 26px;
+      padding: 11px 22px;
+      border-radius: 14px;
+      background: #fff;
+      border: 2px solid #888;
+      color: #000;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 16px 50px;
       }
 
-      .nav-inner a {
+      .buttons-wrap {
+        max-width: 100%;
+      }
+
+      .menu-button {
         font-size: 16px;
-      }
-
-      .section-title {
-        font-size: 30px;
+        padding: 12px 14px;
       }
     }
+  </style>
+</head>
+<body>
+  <div class="top-flag">
+    <img src="c8811ebc-cd46-4b76-ac28-5fd641b23e2e.jpeg" alt="پرچم" />
+  </div>
+
+  <div class="container">
+    <div class="page-mark">فارسی</div>
+
+    <div class="buttons-wrap">
+      <a class="menu-button" href="https://tarikhiran2.wordpress.com/" target="_blank">۱. تاریخ</a>
+      <a class="menu-button" href="https://eternalnamesiran.wordpress.com/" target="_blank" rel="noopener noreferrer">۲. عکس‌های جاویدنامان</a>
+      <a class="menu-button" href="https://www.rezapahlavi.org/fa" target="_blank" rel="noopener noreferrer">۳. برنامه گذار شاهزاده رضا پهلوی</a>
+      <a class="menu-button" href="https://c.org/mVfMRBr9k7" target="_blank">۴. اقدامات فوری</a>
+    </div>
+
+    <a class="back-btn" href="index.html">بازگشت</a>
+  </div>
+</body>
+</html>
